@@ -27,7 +27,7 @@ from sphero_sdk import RvrFwCheckObserver
 
 class SpheroRvrObserver(Observer, RvrFwCheckObserver): 
     def __init__(self, log_level=LogLevel.Silent): 
-        logging.config.dictConfig(logging_config.get_dict(log_level))
+        #logging.config.dictConfig(logging_config.get_dict(log_level))
         Observer.__init__(self)
         RvrFwCheckObserver.__init__(self)
         self._dal = SerialObserverDal()
